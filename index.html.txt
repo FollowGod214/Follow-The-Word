@@ -14,44 +14,81 @@
       font-family: 'Cal Sans', sans-serif; /* Cal Sans for the entire body */
       background-color: #f8f5f0;
       color: #333;
+      background-image: url('https://stpaulcenter.com/wp-content/uploads/2022/08/hugues-de-buyer-mimeure-wT0iS-TSZM-unsplash-scaled.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
     header {
-      background-color: #2d4739;
+      background-color: rgba(45, 71, 57, 0.8);
       color: #fff;
-      padding: 1rem;
+      padding: 2rem;
       text-align: center;
+      font-size: 2rem;
+      border-bottom: 3px solid #fff;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
     }
     nav {
       background-color: #8b6f47;
       display: flex;
       justify-content: center;
-      gap: 1rem;
-      padding: 0.5rem;
+      gap: 1.5rem;
+      padding: 1rem;
     }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      transition: all 0.3s ease;
     }
     nav a:hover {
       text-decoration: underline;
+      color: #ffd700;
     }
     main {
-      padding: 2rem;
-    }
-    footer {
-      background-color: #2d4739;
-      color: #fff;
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
     }
     .verse {
-      background-color: #dbe9ee;
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 1rem 0;
+      background-color: rgba(219, 233, 238, 0.9);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2rem 0;
       font-family: 'Tagesschrift', sans-serif; /* Tagesschrift for the verse */
+      font-size: 1.5rem;
+      color: #2d4739;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      margin: 2rem 0;
+    }
+    footer {
+      background-color: rgba(45, 71, 57, 0.9);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .about-image {
+      background-image: url('https://www.shutterstock.com/image-photo/christian-crosses-on-hill-outdoors-600nw-1918920797.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+    .merch-image {
+      background-image: url('https://i.etsystatic.com/15275342/r/il/514db4/1839610982/il_570xN.1839610982_ibwn.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      border-radius: 10px;
+      margin: 2rem 0;
     }
   </style>
 </head>
@@ -82,6 +119,7 @@
 <main id="about">
   <h2>About</h2>
   <p>Follow The Word was founded with the mission to bring more hearts to Christ and strengthen believers through daily encouragement and teaching.</p>
+  <div class="about-image"></div>
 </main>
 
 <main id="messages">
@@ -92,6 +130,7 @@
 <main id="merch">
   <h2>Merch</h2>
   <p>Exciting merch is on the way! Stay tuned for faith-inspired t-shirts, hats, and more.</p>
+  <div class="merch-image"></div>
 </main>
 
 <main id="contact">
@@ -123,4 +162,3 @@
 
 </body>
 </html>
-
