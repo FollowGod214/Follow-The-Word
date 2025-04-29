@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Follow The Word</title>
   
+  <!-- Google Fonts: Cal Sans and Tagesschrift -->
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Tagesschrift&display=swap" rel="stylesheet">
   
   <style>
+    /* Smooth scroll when clicking nav links */
     html {
       scroll-behavior: smooth;
     }
+
     body {
       margin: 0;
       font-family: 'Cal Sans', sans-serif;
       background-color: #f8f5f0;
-      color: black; 
+      color: #1d1651;
       background-image: url('https://stpaulcenter.com/wp-content/uploads/2022/08/hugues-de-buyer-mimeure-wT0iS-TSZM-unsplash-scaled.jpg');
       background-size: cover;
       background-position: center;
@@ -23,13 +26,11 @@
     }
     header {
       background-color: rgba(45, 71, 57, 0.8);
+      color: #fff;
       padding: 2rem;
       text-align: center;
       font-size: 2rem;
       border-bottom: 3px solid #fff;
-    }
-    header h1 {
-      color: white; 
     }
     header p {
       font-style: italic;
@@ -43,7 +44,7 @@
       padding: 1rem;
     }
     nav a {
-      color: black;
+      color: white;
       text-decoration: none;
       font-weight: bold;
       transition: all 0.3s ease;
@@ -69,19 +70,21 @@
       margin: 2rem 0;
       font-family: 'Tagesschrift', sans-serif;
       font-size: 1.5rem;
-      color: black;
+      color: #2d4739;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
     footer {
       background-color: rgba(45, 71, 57, 0.9);
-      color: black;
+      color: #fff;
       text-align: center;
       padding: 1.5rem;
       position: relative;
       bottom: 0;
       width: 100%;
     }
-    .about-image, .merch-image {
+    /* Portrait image style for About section */
+    .about-image {
+      background-image: url('https://www.shutterstock.com/image-photo/christian-crosses-on-hill-outdoors-600nw-1918920797.jpg');
       background-size: cover;
       background-position: center;
       height: 450px;
@@ -89,11 +92,15 @@
       margin: 2rem auto;
       border-radius: 10px;
     }
-    .about-image {
-      background-image: url('https://www.shutterstock.com/image-photo/christian-crosses-on-hill-outdoors-600nw-1918920797.jpg');
-    }
+    /* Portrait image style for Merch section */
     .merch-image {
       background-image: url('https://i.etsystatic.com/15275342/r/il/514db4/1839610982/il_570xN.1839610982_ibwn.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 450px;
+      width: 300px;
+      margin: 2rem auto;
+      border-radius: 10px;
     }
   </style>
 </head>
