@@ -9,11 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Tagesschrift&display=swap" rel="stylesheet">
   
   <style>
+    /* Smooth scroll when clicking nav links */
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: 'Cal Sans', sans-serif; /* Cal Sans for the entire body */
+      font-family: 'Cal Sans', sans-serif;
       background-color: #f8f5f0;
-      color: #fff; /* Change all text color to white */
+      color: #fff;
       background-image: url('https://stpaulcenter.com/wp-content/uploads/2022/08/hugues-de-buyer-mimeure-wT0iS-TSZM-unsplash-scaled.jpg');
       background-size: cover;
       background-position: center;
@@ -49,21 +54,24 @@
       color: #ffd700;
     }
     main {
-      padding: 4rem 2rem;
+      padding: 2rem;
+    }
+    section {
+      padding: 5rem 2rem;
+      margin-bottom: 3rem;
       text-align: center;
+      background-color: rgba(248, 245, 240, 0.8);
+      border-radius: 12px;
     }
     .verse {
       background-color: rgba(219, 233, 238, 0.9);
       padding: 2rem;
       border-radius: 12px;
       margin: 2rem 0;
-      font-family: 'Tagesschrift', sans-serif; /* Tagesschrift for the verse */
+      font-family: 'Tagesschrift', sans-serif;
       font-size: 1.5rem;
       color: #2d4739;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    section {
-      margin: 2rem 0;
     }
     footer {
       background-color: rgba(45, 71, 57, 0.9);
@@ -79,9 +87,9 @@
       background-image: url('https://www.shutterstock.com/image-photo/christian-crosses-on-hill-outdoors-600nw-1918920797.jpg');
       background-size: cover;
       background-position: center;
-      height: 450px; /* Make it taller for a portrait effect */
-      width: 300px; /* Narrower width */
-      margin: 2rem auto; /* Center the image */
+      height: 450px;
+      width: 300px;
+      margin: 2rem auto;
       border-radius: 10px;
     }
     /* Portrait image style for Merch section */
@@ -89,13 +97,14 @@
       background-image: url('https://i.etsystatic.com/15275342/r/il/514db4/1839610982/il_570xN.1839610982_ibwn.jpg');
       background-size: cover;
       background-position: center;
-      height: 450px; /* Make it taller for a portrait effect */
-      width: 300px; /* Narrower width */
-      margin: 2rem auto; /* Center the image */
+      height: 450px;
+      width: 300px;
+      margin: 2rem auto;
       border-radius: 10px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -111,35 +120,34 @@
   <a href="#contact">Contact</a>
 </nav>
 
-<main id="home">
-  <h2>Welcome to Follow The Word</h2>
-  <p>Spreading the message of Jesus Christ with love and truth. Join us as we grow together in faith!</p>
+<main>
+  <section id="home">
+    <h2>Welcome to Follow The Word</h2>
+    <p>Spreading the message of Jesus Christ with love and truth. Join us as we grow together in faith!</p>
+    <div class="verse" id="daily-verse">Loading daily verse...</div>
+  </section>
 
-  <div class="verse" id="daily-verse">
-    Loading daily verse...
-  </div>
-</main>
+  <section id="about">
+    <h2>About</h2>
+    <p>Follow The Word was founded with the mission to bring more hearts to Christ and strengthen believers through daily encouragement and teaching. I have stuggled myself with following the path of the lord. I have found that with a reminder of his love everyday really helps me seek him in my everyday life. I want it to make a mission for people who know christ to spread the gospel to others. I feel like everyone should be able to find eternal love, but its our mission to guide them. Wether its a close friend, family member, acquaintance, or even a stranger. Just a simple "God loves you" can change someones life. </p>
+    <div class="about-image"></div>
+  </section>
 
-<main id="about">
-  <h2>About</h2>
-  <p>Follow The Word was founded with the mission to bring more hearts to Christ and strengthen believers through daily encouragement and teaching.</p>
-  <div class="about-image"></div>
-</main>
+  <section id="messages">
+    <h2>Messages</h2>
+    <p>Coming soon: blog posts, devotionals, and encouragement for your journey with Jesus.</p>
+  </section>
 
-<main id="messages">
-  <h2>Messages</h2>
-  <p>Coming soon: blog posts, devotionals, and encouragement for your journey with Jesus.</p>
-</main>
+  <section id="merch">
+    <h2>Merch</h2>
+    <p>Exciting merch is on the way! Stay tuned for faith-inspired t-shirts, hats, and more.</p>
+    <div class="merch-image"></div>
+  </section>
 
-<main id="merch">
-  <h2>Merch</h2>
-  <p>Exciting merch is on the way! Stay tuned for faith-inspired t-shirts, hats, and more.</p>
-  <div class="merch-image"></div>
-</main>
-
-<main id="contact">
-  <h2>Contact</h2>
-  <p>Want to reach out? Email us at <a href="mailto:contact@followtheword.com">contact@followtheword.com</a>.</p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to reach out? Email us at <a href="mailto:contact@followtheword.com">contact@followtheword.com</a>.</p>
+  </section>
 </main>
 
 <footer>
